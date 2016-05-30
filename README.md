@@ -38,7 +38,27 @@ This clarifies the intent of the test, makes tests more maintainable because the
 
 *Note: There are some proponents of having only one assertion per test case. You may or may not arrive at that principle. What's essential is that tests have one well-defined reason to fail.*
 
+```ruby
+# avoid - if the first case fails, you won't know the status of the other cases
+it 'identifies phrases as palindromes' do
+  expect('race car').to be_truthy
+  expect('Amor, Roma!').to be_truthy
+  expect('taco    cat').to be_truthy
+end
 
+# prefer - you'll know if there's a problem with punctuation, but extra whitespace is working
+it 'identifies a palindrome phrase' do
+  expect('race car').to be_truthy
+end
+
+it 'identifies a palindrome phrase with punctuation' do
+  expect('Amor, Roma!').to be_truthy
+end
+
+it 'identifies a palindrome phrase with multiple spaces between words' do
+  expect('taco    cat').to be_truthy
+end
+```
 
 ## General TDD Resources
 * [cyber-dojo.org](http://cyber-dojo.org/) is a great place to practice test-driven development. It sets up the language and test environment for you and allows you to run tests on its servers with no setup. It also records the state of the code every time you run the tests, which is helpful for reviewing how you did.
