@@ -7,8 +7,8 @@ This is a collection of notes and resources on testing conventions, techniques, 
 ### Don't repeat inputs and expected outputs in test descriptions
 Rather than describe the implementation, tell a story in the language of the domain. This reduces noise, decouples your test description from its implementation, and encourages thinking at a higher level of abstraction.
 
-Instead of:
 ```ruby
+# avoid
 it 'returns true for ""'
 
 # prefer
