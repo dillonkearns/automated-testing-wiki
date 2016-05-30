@@ -24,7 +24,7 @@ For example, the cases for leap years can be described as typical leap years, ty
 Decreasing noise makes the intent more clear.
 * Avoid implicit words
   ```ruby
-  # avoid - the "should" doesn't express anything new, every test implicitly describes something that "should" happen
+  # avoid - the "should" doesn't express anything new, every test implicitly describes what "should" happen
   it 'should give an error if first name is missing'
   
   # prefer
