@@ -18,6 +18,17 @@ it 'identifies the empty string as a palindrome'
 ### Strive to find (or create) domain language to describe scenarios expressively
 For example, the cases for leap years can be described as typical leap years, typical common years, atypical leap years, and atypical common years. If you were developing a product where leap years were a core part of the domain, it would be useful to have language for these cases.
 
+### Be concise
+Decreasing noise makes the intent more clear.
+* Avoid implicit words
+  ```ruby
+  # avoid - the "should" doesn't express anything new, every test implicitly describes something that "should" happen
+  it 'should give an error if first name is missing'
+  
+  # prefer
+  it 'gives an error when first name is missing'
+  ```
+
 
 ## General TDD Resources
 * [cyber-dojo.org](http://cyber-dojo.org/) is a great place to practice test-driven development. It sets up the language and test environment for you and allows you to run tests on its servers with no setup. It also records the state of the code every time you run the tests, which is helpful for reviewing how you did.
