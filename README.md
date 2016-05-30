@@ -1,6 +1,8 @@
 # Automated Testing Wiki
 ## Purpose
-This is a collection of notes and resources on testing conventions, techniques, and styles that improve the value and maintainability of automated tests. Contributions welcome! You can also fork this to use as a "style-guide" for your project's tests.
+This is a collection of notes and resources on testing conventions, techniques, and styles that improve the value and maintainability of automated tests. Contributions are welcome! You can also fork this to use as a "style-guide" for your project's tests.
+
+This guide strives to be opinionated, but sensible and reasonably uncontroversial. That is, any suggestions given here are backed by an explanation of how they add to tests' value and/or maintainability (please open a pull request if that's not the case!). It is language agnostic, and uses ruby syntax since it reads like pseudocode.
 
 ## Describing Test Cases
 
