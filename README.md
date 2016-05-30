@@ -31,6 +31,14 @@ Decreasing noise makes the intent more clear.
   it 'gives an error when first name is missing'
   ```
 
+## Assertions
+
+### Separate independent assertions into their own tests
+This clarifies the intent of the test, makes tests more maintainable because they are shorter and because test cases are clearly separated, and provides more granular failure messages (one failure doesn't get buried by another).
+
+*Note: There are some proponents of having only one assertion per test case. You may or may not arrive at that principle. What's essential is that tests have one well-defined reason to fail.*
+
+
 
 ## General TDD Resources
 * [cyber-dojo.org](http://cyber-dojo.org/) is a great place to practice test-driven development. It sets up the language and test environment for you and allows you to run tests on its servers with no setup. It also records the state of the code every time you run the tests, which is helpful for reviewing how you did.
