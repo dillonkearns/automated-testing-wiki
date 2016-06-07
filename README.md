@@ -60,5 +60,9 @@ it 'identifies a palindrome phrase with multiple spaces between words' do
 end
 ```
 
+## Dogma
+Above all, rely on your judgement and that of our teams. Don't be absolute in your approach, instead use the **best** solution depending on your goals. Best can change over time as well. You may be told or read in a book that you must always test this way but it is your team that can decide what's best for that project. A good example is multiple asserts. Despite the general rule to avoid multiple asserts, there are situations where this does make sense. [Multiple Asserts Are Ok] (https://www.industriallogic.com/blog/multiple-asserts-are-ok/).
+
+
 ## General TDD Resources
 * [cyber-dojo.org](http://cyber-dojo.org/) is a great place to practice test-driven development. It sets up the language and test environment for you and allows you to run tests on its servers with no setup. It also records the state of the code every time you run the tests, which is helpful for reviewing how you did.
