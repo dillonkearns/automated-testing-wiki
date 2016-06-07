@@ -60,5 +60,20 @@ it 'identifies a palindrome phrase with multiple spaces between words' do
 end
 ```
 
+## Agile Testing Pyramid
+#### Acceptance
+* Purpose: Verify that the system is wired through properly.
+* How: Exercise minimal paths as realisitcally as possible. Rely on lower-level tests for the logic's correctness. 
+* Pros: Gives you confidence that your system works end-to-end.
+* Cons: Slow, brittle, can be non-deterministic.
+
+#### Unit
+* Purpose: Drive out a modular, maintable, minimal code design incrementally. Comprehensively test logic of an independent unit.
+* How: Focus on one small slice of functionality at a time, avoiding anticipating the next steps as you do each small step.
+* Keys to success: Factor out tiny pieces, favoring stateless objects, minimal dependencies, and other techniques to make units easier to test and understand.
+* Pros: Fast to write and execute.
+* Cons: Does not prove that pieces interact together. Note that most beginners have a tendency to write too many realistic tests, and too few unit tests.
+
+
 ## General TDD Resources
 * [cyber-dojo.org](http://cyber-dojo.org/) is a great place to practice test-driven development. It sets up the language and test environment for you and allows you to run tests on its servers with no setup. It also records the state of the code every time you run the tests, which is helpful for reviewing how you did.
